@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes example {
+            0% { left:0px;top: 0px;}
+            20% {left:0px;top:500px;width: 300px;}
+            40% {left:400px;top:300px}
+            60% {left:400px;top:0px}
+            80% {left:200px;top:100px}
+            100% {left:0px;top:0px}
+        }
+        img{
+            position: relative;
+            left:0px;
+            right:0px;            
+            animation-name:example;
+            animation-duration: 10s;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="bus.png" width="50px">
+</body>
+</html>

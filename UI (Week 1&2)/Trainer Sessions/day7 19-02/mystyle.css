@@ -1,0 +1,36 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "arial", sans-serif;
+  color: #5c5656;
+}
+
+nav a, nav li, nav ul {
+  display: inline-block;
+}
+
+nav {
+  padding: 0px 10%;
+  width: 100%;
+  background-color: #e6b368;
+}
+nav img {
+  width: 100px;
+  vertical-align: middle;
+}
+nav ul {
+  width: 80%;
+  text-align: right;
+}
+nav a {
+  width: 150px;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+}
+nav a:hover {
+  background-color: #15161a;
+  color: #e6b368;
+}
+
+/*# sourceMappingURL=mystyle.css.map */

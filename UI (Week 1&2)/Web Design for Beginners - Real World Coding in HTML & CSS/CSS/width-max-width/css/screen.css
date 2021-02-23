@@ -1,0 +1,58 @@
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 90%;
+}
+
+div {
+	background-color: #DDD;
+	margin-bottom: 40px;
+}
+
+.uses-width {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.uses-max-width {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.notes {
+	background-color: #1A294C;
+	color: #FFF;
+	line-height: 1.4em;
+	padding: 20px;
+}
+
+@media screen and (min-width: 800px) {
+	
+	.notes {
+		font-size: 120%;
+		padding: 30px;
+	}
+
+}
+
+@media screen and (min-width: 1060px) {
+	
+	.notes {
+		font-size: 140%;
+		padding: 30px 15%;
+	}
+	
+}
+
+h1 {
+	margin-bottom: 2em;
+}
+
+h2 {
+	margin: 0 0 1em 0;
+}
+

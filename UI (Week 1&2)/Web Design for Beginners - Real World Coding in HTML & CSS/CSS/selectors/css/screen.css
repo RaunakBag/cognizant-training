@@ -1,0 +1,20 @@
+h1 {
+	color: orange;
+	text-align: center;
+}
+
+header p {
+	color: green;
+}
+
+header p span {
+	color: blue;
+}
+
+.highlight {
+	background-color: yellow;
+}
+
+footer .highlight {
+	background-color: LightGray;
+}

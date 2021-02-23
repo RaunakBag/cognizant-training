@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<title>Comparing &ldquo;width&rdquo; and &ldquo;max-width&rdquo;</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/screen.css">
+	</head>
+	
+	<body>
+		
+		<h1>Begin with your web browser window quite large / wide.  After reading the text below, slowly shrink your web browser window to be very narrow.</h1>
+		
+		<div>
+			<h2>This box has no width specified at all, and like any block level element will fill the entire available horizontal space.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		
+		<div class="uses-max-width">
+			<h2>This box uses the max-width property. This box will use a width of 800px if the browser window is large enough, and will pretend it does not have a specified width at all once the browser window is narrower than 800px. This means we will not need to create a mobile oriented media query for this element.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		
+		<div class="notes">
+			<p>There is no right or wrong way to build a layout. Even when it comes to units of measure some developers use pixels, others use percentages, others use &ldquo;em&rdquo;, others use a mixture of all three. I encourage you to experiment trying to create different layouts and see what works and makes sense for you.</p>
+			<p>Personally, I use &ldquo;width&rdquo; and percentage values for columns, and I use &ldquo;max-width&rdquo; and pixels or ems for the outer container element to avoid line lengths that are too long to read comfortably on large monitors. In modern web design, many layouts do not require an outer container element at all.  You can simply utilize the full browser window width and use media queries to include a bit of extra horizontal padding and increase the font size for larger screens. This blue box which has a class of &ldquo;notes&rdquo; is using that strategy.</p>
+		</div>
+		
+	</body>
+	
+</html>

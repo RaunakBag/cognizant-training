@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="abc.css">
+    <style>
+        #d1{
+            background-color: pink;;
+        }
+
+        .greenish{
+            background-color: green ;
+        }
+
+        .reddish{
+            background-color: grey;
+        }
+        
+        div{
+            background-color: red;
+        }
+        div::after{
+            content:' \00AE'
+        }
+    </style>
+</head>
+<body>
+    <div id="d1" class="reddish greenish" style="background-color: skyblue;">
+        Hello  Praveen
+    </div>
+</body>
+</html>

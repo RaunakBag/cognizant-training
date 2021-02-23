@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;            
+        }
+        #nav{
+            display: inline-block;
+            width:90%;
+            text-align: right;
+        }
+        #nav li{
+            display: inline-block;
+            padding:10px;
+            width:100px;           
+        }
+        #teachers>h1{
+           background-color: red;; 
+        }
+        #teachers+h1{
+            border: 10px solid;
+        }
+        #teachers~h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+        a:visited{
+            color:red
+        }
+        a:active{
+            color:lime;
+        }
+    </style>
+</head>
+<body>
+    <div style="width:100%;padding:30px;margin:10px;border:1px solid">
+        <a href="http://kolokolo.com">Kolo</a><br>
+        <a href="http://www.google.com">Google</a><br>
+        <a href="http://www.spaceproject.com">spaceproject</a><br>
+    </div>
+    <h1>Kulkarni</h1>
+    <ul id="teachers">
+        <li>
+            <div>
+                <h1>Praveen</h1>
+            </div>
+        </li>
+        <li>
+            <h1>Rahul</h1>
+        </li>
+        <h1>Kiran</h1>
+    </ul>
+    <h1>Sourabh</h1>
+    <h1>Amrutha</h1>
+    <div style="background-color: lightgray;padding:10px">
+        <img style="vertical-align:middle;" src="https://i.pinimg.com/originals/82/1a/a8/821aa80c546ac7d554e4ac0de0e95cb8.jpg" width="70px">
+        <ul id="nav">
+            <li>Home</li>
+            <li>Aboutus</li>
+            <li>ContactUS</li>
+            <li>Services</li>
+            <li>Blog</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

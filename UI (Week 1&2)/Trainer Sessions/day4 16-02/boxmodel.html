@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <style>
+            *{
+                margin:0px;
+            }
+            
+            #container{
+                display: flex;
+                flex-wrap:wrap;
+            }
+            #d1{                
+                flex:1 0 400px;
+                border:10px solid;
+                padding:10px;
+                box-sizing: border-box;
+            }
+            #d2{
+                flex:1 0 400px;
+                border:10px solid;
+                padding:10px;
+                height:200px;
+                box-sizing: border-box;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-content: space-around;
+            }
+            #d2 div{
+                border: 1px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="d1">Div1</div>
+            <div id="d2">
+                <div style="flex-basis: 250px;">topic1</div>
+                <div style="flex-basis: 250px;">topic2</div>
+                <div style="flex-basis: 250px;">topic4</div>
+                <div style="flex-basis: 250px;">topic3</div>
+            </div>
+        </div>
+    </body>
+</html>

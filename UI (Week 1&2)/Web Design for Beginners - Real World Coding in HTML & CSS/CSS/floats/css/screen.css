@@ -1,0 +1,42 @@
+html {
+	background-color: #FFF;
+}
+
+.container {
+	width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content-area {
+	border-top: 3px solid #000;
+	border-bottom: 3px solid #000;
+}
+
+.main-area {
+	width: 66%;
+	float: left;
+}
+
+.sidebar {
+	width: 34%;
+	float: left;
+}
+
+.fix {
+	clear: both;
+}
+
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	zoom: 1;
+}

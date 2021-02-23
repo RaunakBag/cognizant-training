@@ -1,0 +1,33 @@
+@import 'variables';
+@import 'global';
+%d-ib{
+    display: inline-block;
+}
+nav{
+    padding:0px 10%;
+    width:100%;
+    background-color:rgb(230, 179, 104);
+    img{
+        width:100px;
+        vertical-align: middle;
+    }
+    ul{
+        width:80%;
+        @extend %d-ib;
+        text-align: right;
+    }
+    li{
+        @extend %d-ib;
+    }
+    a{
+        @extend %d-ib;
+        width:150px;
+        text-decoration: none;
+        padding:20px;
+        text-align: center;        
+    }
+    a:hover{
+        background-color: rgb(21, 22, 26);
+        color:rgb(230, 179, 104)
+    }
+}

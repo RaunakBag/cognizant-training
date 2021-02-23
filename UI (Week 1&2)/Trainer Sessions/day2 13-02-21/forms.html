@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style></style>
+    </head>
+    <body>
+        <form action="http://mywhish.com/abc.php" method="POST" enctype="multipart/form-data">
+            
+            <label>Full Name:</label>
+            <input type="text" required name="fullname">
+            <br>
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="m">Male &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender" value="f">Female &nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
+            <label>Technologies:</label> 
+            <input type="checkbox" name="qualification" value='html'>HTML<br>
+            <input type="checkbox" name="qualification" value='css'>CSS<br>
+            <input type="checkbox" name="qualification" value='ang'>Angular<br>
+            <input type="checkbox" name="qualification" value='rjs'>React<br>
+            <br>
+            <label>Date of Birth:</label><input type="date" name='dob'><br>
+            
+            <label>Email Address</label><input type="email" name="mailid"><br>
+            <label>Select Pic"</label>
+            <input type="file" name="profilepic"><br>
+            <label>Choose country</label>
+            <select name="country">
+                <option value="IND">India</option>
+                <option value="SRL">srilanka</option>
+                <option value="PAK">Pakistan</option>
+                <option value="RUS">Russia</option>
+            </select><br>
+            <button>Save</button>
+        </form>
+    </body>
+</html>
