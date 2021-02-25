@@ -18,6 +18,14 @@ html{
     margin: 0 auto;
 }
 
+section{
+    padding: 80px 0;
+}
+
+.box{
+    padding: 1%;
+}
+
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Images/hero.jpg);
     background-size: cover;
@@ -69,15 +77,59 @@ header {
     border-bottom: 2px solid #e67e22;
 }
 
+h1,h2,h3{
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
 h1{
     margin-top: 0;
     margin-bottom: 20px;
     color: #ffffff;
     font-size: 240%;
-    font-weight: 300;
-    text-transform: uppercase;
     letter-spacing: 1px;
     word-spacing: 4px;
+}
+
+h2{
+    letter-spacing: 1px;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+.icon-big{
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
 }
 
 .btn:link,
@@ -118,4 +170,49 @@ h1{
 .btn-ghost:active{
     border: 1px solid #cf6d17;
     color: #ffffff;
+}
+
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-photo img{
+    width: 100%;
+    height: auto;
+}
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
 }
