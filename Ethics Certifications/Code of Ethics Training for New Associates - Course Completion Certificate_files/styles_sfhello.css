@@ -1,0 +1,46 @@
+/* For New Fonts */
+@font-face {
+  font-family: SFHelloRegular;
+  src: url('/fonts/SFHelloRegular.otf') format("otf"), url('/fonts/SFHelloRegular.woff') format("woff"), url('/fonts/SFHelloRegular.woff2') format("woff2"), url('/fonts/SFHelloRegular.ttf') format("ttf"), url('/fonts/SFHelloRegular.eot') format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: SFHelloRegularItalic;
+  src: url('/fonts/SFHelloRegularItalic.otf') format("otf"), url('/fonts/SFHelloRegularItalic.woff') format("woff"), url('/fonts/SFHelloRegularItalic.woff2') format("woff2"), url('/fonts/SFHelloRegularItalic.ttf') format("ttf"), url('/fonts/SFHelloRegularItalic.eot') format("eot");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: SFHelloLight;
+  src: url('/fonts/SFHelloLight.otf') format("otf"), url('/fonts/SFHelloLight.woff') format("woff"), url('/fonts/SFHelloLight.woff2') format("woff2"), url('/fonts/SFHelloLight.ttf') format("ttf"), url('/fonts/SFHelloLight.eot') format("eot");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: SFHelloBold;
+  src: url('/fonts/SFHelloBold.otf') format("otf"), url('/fonts/SFHelloBold.woff') format("woff"), url('/fonts/SFHelloBold.woff2') format("woff2"), url('/fonts/SFHelloBold.ttf') format("ttf"), url('/fonts/SFHelloBold.eot') format("eot");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: SFHelloBoldItalic;
+  src: url('/fonts/SFHelloBoldItalic.otf') format("otf"), url('/fonts/SFHelloBoldItalic.woff') format("woff"), url('/fonts/SFHelloBoldItalic.woff2') format("woff2"), url('/fonts/SFHelloBoldItalic.ttf') format("ttf"), url('/fonts/SFHelloBoldItalic.eot') format("eot");
+  font-weight: bold;
+  font-style: italic;
+}
+/*b {
+  font-family: SFHelloBold;
+}
+b i {
+  font-family: SFHelloBoldItalic;
+}*/
+/* //For New Fonts */
+td {  font-family: Arial, Helvetica, sans-serif; /*font-family: 'SFHelloRegular';*/ font-size: 14px}
+a:link {  font-family: Arial, Helvetica, sans-serif; /*font-family: 'SFHelloRegular';*/ font-size: 14px; font-weight: bold; color: #003366}
+a:visited {  font-family: Arial, Helvetica, sans-serif; /*font-family: 'SFHelloRegular';*/ font-size: 14px; font-weight: bold; color: #003366}
+.title {  font-family: Arial, Helvetica, sans-serif; /*font-family: 'SFHelloRegular';*/ font-size: 16px; font-weight: bold}
+.subtitle {  font-family: Arial, Helvetica, sans-serif; /*font-family: 'SFHelloRegular';*/ font-size: 14px; font-weight: bold}
+.here { font-family: Arial, Helvetica, sans-serif; /*font-family: 'SFHelloRegular';*/ font-size: 14px; font-weight: bold; color: #333333}
+span.certificateid { font-family: Arial, Helvetica, sans-serif; /*font-family: 'SFHelloRegular';*/ font-size: 8pt; color: #CCCCCC }
+
