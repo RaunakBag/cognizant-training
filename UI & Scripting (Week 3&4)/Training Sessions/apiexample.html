@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="d-flex justify-content-between w-100">
+                <div onclick="sort('population','dec')">Population:high-low</div>
+                <div onclick="sort('population','asc')">Population:low-high</div>
+                <div>Gini:high-low</div>
+                <div>Gini:low-high</div>
+            </div>
+            <div class="row" id="d1">
+
+            </div>
+        </div>
+        <script>
+            var ar = [12,23,36,56,77,34];
+            ar.sort();
+            var countries = [];
+
+            fetch("http://restcountries.eu/rest/v2/all/")
+            .then(function(res){
+                res.json().then(function(data){
+                    console.log(data)
+                    countries = [...data];
+                    genUi(countries)
+                })
+            })
+            function genUi(data){
+                document.getElementById("d1").innerHTML = "";
+                data.forEach(c => {
+                        var newcard = `
+                        <div class="card col-md-3">
+                            <img class="card-img-top" src="${c.flag}" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">${c.name}</h4>
+                                <p class="card-text">${c.population}</p>
+                                <a href="#" class="btn btn-primary">See Profile</a>
+                            </div>
+                        </div>
+                        `
+                        document.getElementById("d1").innerHTML += newcard;
+                    });
+            }
+            function sort(k,o){
+                console.log(k,o)
+                countries.sort(function(a,b){
+                    if(a[k]>b[k]){
+                        return o==='asc'?1:-1
+                    }
+                    else{
+                        return o==='asc'?-1:1
+                    }
+                })
+
+                genUi(countries)
+            }
+        </script>
+    </body>
+
+</html>

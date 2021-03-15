@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">        
+            <form onsubmit="addProduct(event)" name="productForm">
+                <div class="form-group">
+                    <label for="imgurl">Product URL</label>
+                    <input type="text" class="form-control" placeholder="Enter Product Image URL" id="imgul" name="purl">
+                </div>
+                <div class="form-group">
+                    <label for="plabel">Product Label:</label>
+                    <input type="text" class="form-control" placeholder="Enter Product Label" id="plabel" name="plabel">
+                </div>
+                <div class="form-group">
+                    <label class="form-check-label" for="pid">
+                        Product ID
+                    </label>
+                    <input type="text" class="form-control" id="pid" name="pid"> 
+                
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <script>
+            function addProduct(e){
+                e.preventDefault();
+                var data = {
+                    "product_id": document.productForm.pid.value,
+                    "product_label": document.productForm.plabel.value,
+                    "product_url": document.productForm.purl.value
+                }
+                fetch('http://localhost:3000/products', {
+                    method: 'POST', // or 'PUT'
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Success:', data);
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
+            }
+        </script>
+    </body>
+</html>
